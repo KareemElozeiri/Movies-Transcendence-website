@@ -1,4 +1,7 @@
-.App {
-  text-align: center;
+.display-flex{
+  display:flex;
 }
 
+.padd{
+  padding:1em;
+}
