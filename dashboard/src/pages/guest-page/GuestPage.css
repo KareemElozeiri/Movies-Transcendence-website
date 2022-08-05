@@ -1,0 +1,80 @@
+  
+  /* Make the image responsive */
+img {
+    width: 100%;
+    height: 100vh;
+}
+  
+  /* Style the button and place it in the middle of the container/image */
+.login-btn {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #555;
+    color: white;
+    font-size: 14px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.signup-btn{
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #555;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+.text-1{
+    position: absolute;
+    top: 37%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 12px 24px;
+    text-align: center;
+
+
+}
+
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 601px) {
+    .text-1 {
+      font-size: 24px;
+
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .text-1 {
+      font-size: 12px;
+
+    }
+    .signup-btn{
+        font-size: 10px;
+    }
+    .login-btn{
+        font-size: 10px;
+    }
+  }
+  
+
+  
+.btn:hover {
+    background-color: black;
+}
