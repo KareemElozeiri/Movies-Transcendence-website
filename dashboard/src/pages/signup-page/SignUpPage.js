@@ -1,5 +1,4 @@
 import React from "react";
-import react from "react-dom"
 import GuestNavbar from "../../components/guest-navbar/GuestNavbar";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Footer from "../../components/footer/Footer"
