@@ -2,11 +2,11 @@ import React from "react";
 import react from "react-dom"
 import GuestNavbar from "../../components/guest-navbar/GuestNavbar";
 import 'bootstrap/dist/css/bootstrap.min.css';
-
 import Footer from "../../components/footer/Footer"
-import "./GuestPage.css"
+import "./LoginPage.css"
 
-class GuestPage extends React.Component{
+
+class LoginPage extends React.Component{
 
     constructor(props){
         super(props);
@@ -15,12 +15,9 @@ class GuestPage extends React.Component{
 
     render(){
         return(
-            <div className="guest-page bg-dark">
+            <div className="login-page bg-dark">
                 <GuestNavbar/>
-                <img alt="background" src="/images/home0.jpg"/>
-                <p className="text-1"> Explore All Movies & Get Recommendations </p>
-                <button className="login-btn btn">Login</button>
-                <button className="signup-btn btn">Sign Up</button>
+                <img alt="background"  src="/images/home0.jpg"/>
                 <Footer />
             </div>
         );
@@ -28,4 +25,4 @@ class GuestPage extends React.Component{
 
 }
 
-export default GuestPage;
+export default LoginPage;
