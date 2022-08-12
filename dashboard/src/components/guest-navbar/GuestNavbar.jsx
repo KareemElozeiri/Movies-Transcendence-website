@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import "./GuestNavbar.css"
 
 
 class GuestNavbar extends React.Component{
@@ -11,12 +12,12 @@ class GuestNavbar extends React.Component{
 
     render(){
         return (
-            <Navbar bg="white" expand="lg">
+            <Navbar className="navbar navbar-dark bg-dark" expand="lg">
                 <Container>
                     <Navbar.Brand href="/"> <div className="logo-icon"> Movies Transcendence</div></Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                    <Navbar.Collapse id="basic-navbar-nav">
-                        <Nav className="me-auto">
+                    <Navbar.Collapse id="basic-navbar-nav" className='guest-navbar-links"'>
+                        <Nav className="justify-content-end" style={{ width: "100%" }}>
                             <Nav.Link href="/login">Log In</Nav.Link>
                             <Nav.Link href="/signup">Sign Up</Nav.Link>
         

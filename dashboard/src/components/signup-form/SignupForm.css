@@ -1,0 +1,28 @@
+.signup-form{
+    color: white;
+    position: absolute;
+    margin-right: auto;
+    margin-left: auto;
+    top: 25%;
+    width: 60%;
+    left: 0;
+    right: 0;
+    
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: white dashed;
+    padding: 3%;
+    animation: fadeIn 3s;
+}
+
+.signup-form h2{
+    text-align: center;
+}
+
+.signup-form Button{
+    background-color: rgba(85, 85, 85, 0.0);
+    border: solid white;
+    text-align: center;
+}
