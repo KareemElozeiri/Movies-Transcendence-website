@@ -2,7 +2,7 @@ import React from "react";
 import Button from 'react-bootstrap/Button';
 import "./LoginForm.css"
 import Form from 'react-bootstrap/Form';
-
+import { Link } from "react-router-dom";
 
 class LoginForm extends React.Component{
 
@@ -29,6 +29,9 @@ class LoginForm extends React.Component{
                     <div style={{"textAlign":"center"}}>
                         <Button>Login In</Button>
                     </div>
+                    <Form.Text>
+                        <Link style={{"color":"white","padding":"1%"}} to="/signup">Don't have an account? Register now</Link>
+                    </Form.Text>
                 </Form>
             </div>
         )

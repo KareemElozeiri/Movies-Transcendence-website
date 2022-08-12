@@ -20,9 +20,9 @@ class App extends React.Component{
       <div className='App'>
         <BrowserRouter>
           <Routes>
-            <Route path="/" element={ <GuestPage />} />
-            <Route path="/login" element={ <LoginPage/>} />
-            <Route path="/signup" element={<SignUpPage/>} />
+            <Route exact path="/" element={ <GuestPage />} />
+            <Route excat path="/login" element={ <LoginPage/>} />
+            <Route exact path="/signup" element={<SignUpPage/>} />
           </Routes>
         </BrowserRouter>
       </div>
