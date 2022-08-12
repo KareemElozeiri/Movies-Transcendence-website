@@ -3,3 +3,8 @@
     height: 100vh;
     animation: fadeIn 2s;
 }
+
+.login-page{
+    align-items: center;
+    justify-content: center;
+}

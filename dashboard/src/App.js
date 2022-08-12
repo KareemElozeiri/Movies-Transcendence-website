@@ -5,6 +5,9 @@ import GuestPage from "./pages/guest-page/GuestPage";
 import LoginPage from './pages/login-page/LoginPage';
 import SignUpPage from './pages/signup-page/SignUpPage';
 
+import "bootstrap/dist/css/bootstrap.min.css"
+
+
 class App extends React.Component{
 
   constructor(props){

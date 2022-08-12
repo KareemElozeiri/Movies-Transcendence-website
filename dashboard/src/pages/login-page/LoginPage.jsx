@@ -3,6 +3,7 @@ import GuestNavbar from "../../components/guest-navbar/GuestNavbar";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Footer from "../../components/footer/Footer"
 import "./LoginPage.css"
+import LoginForm from "../../components/login-form/LoginForm";
 
 
 class LoginPage extends React.Component{
@@ -17,6 +18,7 @@ class LoginPage extends React.Component{
             <div className="login-page bg-dark">
                 <GuestNavbar/>
                 <img alt="background"  src="/images/home0.jpg"/>
+                <LoginForm className="page-form"/>
                 <Footer />
             </div>
         );
