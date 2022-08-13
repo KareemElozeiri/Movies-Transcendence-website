@@ -12,14 +12,14 @@ class GuestNavbar extends React.Component{
 
     render(){
         return (
-            <Navbar className="navbar navbar-dark bg-dark" expand="lg">
+            <Navbar className="navbar navbar-dark bg-dark border-bottom border-secondary" expand="lg">
                 <Container>
                     <Navbar.Brand href="/"> <div className="logo-icon"> Movies Transcendence</div></Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav" className='guest-navbar-links"'>
-                        <Nav className="justify-content-end" style={{ width: "100%" }}>
-                            <Nav.Link href="/login">Log In</Nav.Link>
-                            <Nav.Link href="/signup">Sign Up</Nav.Link>
+                        <Nav className="justify-content-end" style={{ width: "100%",color: "#eb4034"}}>
+                            <Nav.Link  href="/login">Log In</Nav.Link>
+                            <Nav.Link  href="/signup">Sign Up</Nav.Link>
         
                         </Nav>
                     </Navbar.Collapse>

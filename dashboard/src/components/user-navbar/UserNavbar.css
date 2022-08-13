@@ -1,0 +1,28 @@
+.user-navbar{
+    background-color: black;
+    color: white;
+}
+
+.user-navbar-links{
+    margin-right: 0 auto;
+    
+}
+
+.navbar-text{
+    padding: 1%;
+}
+
+@media (min-width: 1000px) {
+    .navbar-text-end{
+        border-right:1px solid;
+    }
+
+}
+
+
+@media (max-width: 980px) {
+    .navbar-text-end{
+        border-bottom:0.5px solid;
+    }
+
+}
