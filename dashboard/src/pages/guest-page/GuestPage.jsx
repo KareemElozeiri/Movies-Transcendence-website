@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Footer from "../../components/footer/Footer"
 import "./GuestPage.css"
+import GuestPageCarousel from "../../components/guest-page-carousel/GuestPageCarousel";
 
 class GuestPage extends React.Component{
 
@@ -16,10 +17,10 @@ class GuestPage extends React.Component{
         return(
             <div className="guest-page bg-dark">
                 <GuestNavbar/>
-                <img alt="background" src="/images/home0.jpg"/>
-                <p className="text-1"> Explore All Movies & Get Recommendations </p>
-                <button className="login-btn btn">Login</button>
-                <button className="signup-btn btn">Sign Up</button>
+                <div className="guest-page-content">
+                    <GuestPageCarousel/>
+                </div>
+
                 <Footer />
             </div>
         );
