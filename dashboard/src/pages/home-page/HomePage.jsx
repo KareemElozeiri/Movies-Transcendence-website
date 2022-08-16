@@ -1,10 +1,11 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import UserNavbar from '../../components/user-navbar/UserNavbar';
-import { Container, Button } from 'react-bootstrap';
+import { Container} from 'react-bootstrap';
 import "./HomePage.css"
 import Footer from '../../components/footer/Footer';
 import UserNavTabs from '../../components/user-nav-tabs/UserNavTabs';
+import CardGrid from '../../components/card-grid/CardGrid';
 
 class HomePage extends React.Component{
 
@@ -17,23 +18,24 @@ class HomePage extends React.Component{
                     {
                         eventKey: "recommended",
                         title: "Recommended Movies",
-                        content: (<div>
+                        content: (
+                        <div>
                             <h1>Recommended Movies</h1>
-                            <p>Here we will put recommended movies cards</p>
+                            <CardGrid length={100}/>
                         </div>)
                     },
                     {
                         eventKey: "liked",
                         title: "Liked Movies",
-                        content: (<div>
+                        content: (<div >
                             <h1>Liked Movies</h1>
-                            <p>Here we will put liked movies cards</p>
+                            <CardGrid length={8}/>
                         </div>)
                     },
                     {
                         eventKey: "stream",
                         title: "Stream",
-                        content: (<div>
+                        content: (<div style={{"height":"100vh"}}>
                             <h1>Stream</h1>
                             <p>here we will put posts by other users</p>
                         </div>)
@@ -45,19 +47,13 @@ class HomePage extends React.Component{
 
     render(){
         return (
-            <div className="home-page bg-dark">
+            <div className="home-page bg-dark ">
                 <UserNavbar/>
-                <Container className='home-content'>
-                    {/**
-                     * Here the content of the page based on the user action
-                     * Options: Search results - Friends Recommendations - Liked Movies
-                     *          Site Recommendations 
-                     */
-                    }
-                    <UserNavTabs defaultActiveKey={this.state.userNavTabs.defaultActiveKey} 
-                                 tabs={this.state.userNavTabs.tabs}/>
-4                    
-                </Container>
+
+                <UserNavTabs 
+                    defaultActiveKey={this.state.userNavTabs.defaultActiveKey} 
+                    tabs={this.state.userNavTabs.tabs}
+                />
                 <Footer/>
             </div>
         );

@@ -15,11 +15,12 @@ class UserNavTabs extends React.Component{
 
     render(){
         return(
-            <div className='user-nav-tabs'>
-                <Tabs defaultActiveKey={this.props.defaultActiveKey}  className="mb-3" justify>
+            <div className='bg-dark'  style={{"padding":"3%","color":"white"}}>
+                <Tabs   defaultActiveKey={this.props.defaultActiveKey}  justify>
                     {this.props.tabs.map((tab)=>(
-                        <Tab eventKey={tab.eventKey} title={tab.title}>
-                            {tab.content}
+                        <Tab  eventKey={tab.eventKey} title={tab.title}>
+                                {tab.content}
+                            
                         </Tab>
                     ))}
                 </Tabs>

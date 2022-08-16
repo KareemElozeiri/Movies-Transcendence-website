@@ -4,10 +4,12 @@
     justify-content:center;
     margin:auto;
     height:50px;
-    position:fixed;
+    position: relative;
     width:100%;
     bottom:0;  
     color: white;
+    align-items: center;
+    text-align: center;
 }
 
 
